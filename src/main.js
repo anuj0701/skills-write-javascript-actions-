@@ -1,5 +1,5 @@
 const getJoke = require("./joke");
-const { getInput, setFailed } = require('@actions/core');
+const core = require("@actions/core");
 
 async function run() {
   const joke = await getJoke();
